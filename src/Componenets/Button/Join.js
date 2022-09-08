@@ -8,8 +8,8 @@ const Join = () => {
       font-semibold
       text-blue-200 
       px-4 
-      w-[144px]
-      text-lg 
+      w-28
+      text-base 
       flex
       justify-center 
       rounded-lg
