@@ -4,30 +4,35 @@ import LandingImage from "../../images/expense.svg";
 
 const Landing = () => {
   return (
-    <div className="h-[calc(100vh-70px)] bg-[#031410] flex ">
-      <div className="md:w-[50vw]  ">
-        <span className="text-[62px] p-4 text-white font-bold">
+    <div className="h-[calc(100vh-70px)] bg-[#031410] flex items-center ">
+      <div className="md:w-[50vw] align-middle ">
+        <div className="text-[32px] md:text-[62px] p-4 text-white font-bold">
           Your Destination to
-        </span>
+        </div>
 
-        <div className="flex justify-center items-center input-cursor">
-          <div className="text-blue-200 font-extrabold text-[72px]">
+        <div className="p-4 flex justify-center items-center input-cursor">
+          <div className="text-blue-200 font-extrabold text-[36px] md:text-[72px]">
             <Typewriter
-            options={{loop: true,strings: ["Track your Expense", "Set monthly budget", "Manage Your Savings"],
-            autoStart: true}}
+              options={{
+                loop: true,
+                strings: [
+                  "Track your Expense",
+                  "Set monthly budget",
+                  "Manage Your Savings",
+                ],
+                autoStart: true,
+              }}
               onInit={(typewriter) => {
                 typewriter
-                  
 
                   .pauseFor(500)
                   .deleteAll()
 
                   .start();
-                
               }}
             />
           </div>
-          <span className="inline-block w-0.5 h-11 bg-white ml-2"></span>
+          
         </div>
       </div>
       <div className="w-[50vw] h-full  hidden md:flex items-center justify-center">
