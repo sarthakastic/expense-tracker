@@ -1,8 +1,11 @@
 import React from "react";
+import {signInWithGoogle} from "../../firebase/Firebase"
+import {Link } from "react-router-dom"
 
 const Join = () => {
   return (
     <div
+    // onClick={signInWithGoogle}
       className="border-[2.5px]  
       border-blue-200
       font-semibold
@@ -18,7 +21,10 @@ const Join = () => {
       hover:text-[#031416]
         "
     >
+      <Link to='/join'>
+
       Join Now
+      </Link>
     </div>
   );
 };
