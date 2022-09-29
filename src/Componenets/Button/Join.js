@@ -4,6 +4,7 @@ import {Link } from "react-router-dom"
 
 const Join = () => {
   return (
+    <Link to='/join'>
     <div
     // onClick={signInWithGoogle}
       className="border-[2.5px]  
@@ -21,11 +22,10 @@ const Join = () => {
       hover:text-[#031416]
         "
     >
-      <Link to='/join'>
 
       Join Now
-      </Link>
     </div>
+      </Link>
   );
 };
 
