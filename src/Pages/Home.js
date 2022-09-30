@@ -8,10 +8,16 @@ import {
   Link
 } from "react-router-dom";
 import SignIn from '../Componenets/Content/SignIn';
+import { AuthContextProvider } from '../Context/AuthContext';
+import Protected from './Protected';
+import { UserAuth } from '../Context/AuthContext';
 
 const Home = () => {
+  const user = UserAuth();
   return (
     <>
+    <AuthContextProvider>
+      
     <Router>
 
     <div>
@@ -23,8 +29,12 @@ const Home = () => {
         <Routes>
           <Route path='/join' element={ < SignIn /> }/>
         </Routes>
+        <Routes>
+          <Route path='/account' element={ < Protected /> }/>
+        </Routes>
     </div>
     </Router>
+    </AuthContextProvider>
     </>
   )
 }

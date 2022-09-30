@@ -15,19 +15,3 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
-const provider = new GoogleAuthProvider()
-const analytics = getAnalytics(app);
-
-
-
-export const signInWithGoogle = () => {
-    signInWithPopup(auth,provider)
-    .then((result)=>{
-        console.log(result)
-    }).catch((error)=>{
-        console.log(error)
-    })
-}
-
-
-export const signout= () => signOut(auth).then(()=> console.log("signed out"))
