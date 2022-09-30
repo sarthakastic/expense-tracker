@@ -24,7 +24,7 @@ const Navbar = () => {
         </p>
       </div>:
       <div className="flex items-center mx-2  w-full gap-2">
-      <Link to="/">
+      <Link to="/account">
 
       <img src={logo} alt="logo" className="h-10 " />
       </Link>
