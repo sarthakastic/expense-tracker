@@ -38,7 +38,7 @@ const Navbar = () => {
       
 
       <div className="flex gap-2">
-        <div className="mx-4 ">
+        <div className="mx-4 w-full">
           
           <Join />
           
